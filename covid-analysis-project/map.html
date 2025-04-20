@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a4914948a6619079bf4079313720a98c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_a4914948a6619079bf4079313720a98c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a4914948a6619079bf4079313720a98c = L.map(
+                "map_a4914948a6619079bf4079313720a98c",
+                {
+                    center: [20.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 2,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6bb520075ff23e419c1550295293160e = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_6bb520075ff23e419c1550295293160e.addTo(map_a4914948a6619079bf4079313720a98c);
+        
+    
+            var feature_group_7e5f41040007ca24638c88c0df3e24fa = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_a65752cac2bd3dd550bda08e3eadc79c = L.circle(
+                [1.6508, 10.2679],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 249848.4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_7e5f41040007ca24638c88c0df3e24fa);
+        
+    
+        var popup_dc7ead5b11fe6f5ca257718247305bf0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a9dbe9c09d6ed2695800c2e54d435d10 = $(`<div id="html_a9dbe9c09d6ed2695800c2e54d435d10" style="width: 100.0%; height: 100.0%;">     <b>Africa</b><br>     Confirmed: 832,828<br>     Deaths: 17,817<br>     Recovered: 489,331     </div>`)[0];
+                popup_dc7ead5b11fe6f5ca257718247305bf0.setContent(html_a9dbe9c09d6ed2695800c2e54d435d10);
+            
+        
+
+        circle_a65752cac2bd3dd550bda08e3eadc79c.bindPopup(popup_dc7ead5b11fe6f5ca257718247305bf0)
+        ;
+
+        
+    
+    
+            circle_a65752cac2bd3dd550bda08e3eadc79c.bindTooltip(
+                `<div>
+                     
+    <b>Africa</b><br>
+    Confirmed: 832,828<br>
+    Deaths: 17,817<br>
+    Recovered: 489,331
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_2501dd2d345871a2d24aa6223c5d6e35 = L.circle(
+                [34.0479, 100.6197],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1188047.4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_7e5f41040007ca24638c88c0df3e24fa);
+        
+    
+        var popup_a2141975b47125fad522c91f3acd2467 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5ec36bbd3df4c3f3f28481b53f9ac6a9 = $(`<div id="html_5ec36bbd3df4c3f3f28481b53f9ac6a9" style="width: 100.0%; height: 100.0%;">     <b>Asia</b><br>     Confirmed: 3,960,158<br>     Deaths: 91,044<br>     Recovered: 2,866,775     </div>`)[0];
+                popup_a2141975b47125fad522c91f3acd2467.setContent(html_5ec36bbd3df4c3f3f28481b53f9ac6a9);
+            
+        
+
+        circle_2501dd2d345871a2d24aa6223c5d6e35.bindPopup(popup_a2141975b47125fad522c91f3acd2467)
+        ;
+
+        
+    
+    
+            circle_2501dd2d345871a2d24aa6223c5d6e35.bindTooltip(
+                `<div>
+                     
+    <b>Asia</b><br>
+    Confirmed: 3,960,158<br>
+    Deaths: 91,044<br>
+    Recovered: 2,866,775
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_b97fa2a94958e72ab49ce002ac14e133 = L.circle(
+                [54.526, 15.2551],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 835397.7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_7e5f41040007ca24638c88c0df3e24fa);
+        
+    
+        var popup_5c45b61940e38a9f861167bcb22a7124 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0fb6a2fd53ada3463c624c628529c49d = $(`<div id="html_0fb6a2fd53ada3463c624c628529c49d" style="width: 100.0%; height: 100.0%;">     <b>Europe</b><br>     Confirmed: 2,784,659<br>     Deaths: 201,619<br>     Recovered: 1,607,077     </div>`)[0];
+                popup_5c45b61940e38a9f861167bcb22a7124.setContent(html_0fb6a2fd53ada3463c624c628529c49d);
+            
+        
+
+        circle_b97fa2a94958e72ab49ce002ac14e133.bindPopup(popup_5c45b61940e38a9f861167bcb22a7124)
+        ;
+
+        
+    
+    
+            circle_b97fa2a94958e72ab49ce002ac14e133.bindTooltip(
+                `<div>
+                     
+    <b>Europe</b><br>
+    Confirmed: 2,784,659<br>
+    Deaths: 201,619<br>
+    Recovered: 1,607,077
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_3ad728e3688b84aa59aabdda0c9a0ffd = L.circle(
+                [54.526, -105.2551],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 230567.1, "stroke": true, "weight": 3}
+            ).addTo(feature_group_7e5f41040007ca24638c88c0df3e24fa);
+        
+    
+        var popup_c1e1702bdb64eeee90a6e47a1da1d6d2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dc336dc80151a435b3e920d8bfbbeb83 = $(`<div id="html_dc336dc80151a435b3e920d8bfbbeb83" style="width: 100.0%; height: 100.0%;">     <b>North America</b><br>     Confirmed: 768,557<br>     Deaths: 59,215<br>     Recovered: 428,652     </div>`)[0];
+                popup_c1e1702bdb64eeee90a6e47a1da1d6d2.setContent(html_dc336dc80151a435b3e920d8bfbbeb83);
+            
+        
+
+        circle_3ad728e3688b84aa59aabdda0c9a0ffd.bindPopup(popup_c1e1702bdb64eeee90a6e47a1da1d6d2)
+        ;
+
+        
+    
+    
+            circle_3ad728e3688b84aa59aabdda0c9a0ffd.bindTooltip(
+                `<div>
+                     
+    <b>North America</b><br>
+    Confirmed: 768,557<br>
+    Deaths: 59,215<br>
+    Recovered: 428,652
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_8b5389218f140cdcd539341a0df86046 = L.circle(
+                [-22.7359, 140.0188],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
+            ).addTo(feature_group_7e5f41040007ca24638c88c0df3e24fa);
+        
+    
+        var popup_580996fba92b34b95c44c93765cbadea = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0514dd697dfcc984d56bf65d5a6fdbb1 = $(`<div id="html_0514dd697dfcc984d56bf65d5a6fdbb1" style="width: 100.0%; height: 100.0%;">     <b>Oceania</b><br>     Confirmed: 16,949<br>     Deaths: 189<br>     Recovered: 10,854     </div>`)[0];
+                popup_580996fba92b34b95c44c93765cbadea.setContent(html_0514dd697dfcc984d56bf65d5a6fdbb1);
+            
+        
+
+        circle_8b5389218f140cdcd539341a0df86046.bindPopup(popup_580996fba92b34b95c44c93765cbadea)
+        ;
+
+        
+    
+    
+            circle_8b5389218f140cdcd539341a0df86046.bindTooltip(
+                `<div>
+                     
+    <b>Oceania</b><br>
+    Confirmed: 16,949<br>
+    Deaths: 189<br>
+    Recovered: 10,854
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_63c38c3e2cfc056a7e7dc57ca0e4d101 = L.circle(
+                [0.0, 0.0],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1301055.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_7e5f41040007ca24638c88c0df3e24fa);
+        
+    
+        var popup_6071324a304f49389f1be4198a6abba2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_23a097b80a4b8edc4246b687ecb186a0 = $(`<div id="html_23a097b80a4b8edc4246b687ecb186a0" style="width: 100.0%; height: 100.0%;">     <b>Other</b><br>     Confirmed: 4,336,850<br>     Deaths: 148,646<br>     Recovered: 1,351,225     </div>`)[0];
+                popup_6071324a304f49389f1be4198a6abba2.setContent(html_23a097b80a4b8edc4246b687ecb186a0);
+            
+        
+
+        circle_63c38c3e2cfc056a7e7dc57ca0e4d101.bindPopup(popup_6071324a304f49389f1be4198a6abba2)
+        ;
+
+        
+    
+    
+            circle_63c38c3e2cfc056a7e7dc57ca0e4d101.bindTooltip(
+                `<div>
+                     
+    <b>Other</b><br>
+    Confirmed: 4,336,850<br>
+    Deaths: 148,646<br>
+    Recovered: 1,351,225
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_1ca37cf9931116c31dc7577cbd9da505 = L.circle(
+                [-8.7832, -55.4915],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1134145.2, "stroke": true, "weight": 3}
+            ).addTo(feature_group_7e5f41040007ca24638c88c0df3e24fa);
+        
+    
+        var popup_e50000bfb24a4b3d429d6d3016fa799e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6041e424b0af75807aabc0da334a4b48 = $(`<div id="html_6041e424b0af75807aabc0da334a4b48" style="width: 100.0%; height: 100.0%;">     <b>South America</b><br>     Confirmed: 3,780,484<br>     Deaths: 135,506<br>     Recovered: 2,714,173     </div>`)[0];
+                popup_e50000bfb24a4b3d429d6d3016fa799e.setContent(html_6041e424b0af75807aabc0da334a4b48);
+            
+        
+
+        circle_1ca37cf9931116c31dc7577cbd9da505.bindPopup(popup_e50000bfb24a4b3d429d6d3016fa799e)
+        ;
+
+        
+    
+    
+            circle_1ca37cf9931116c31dc7577cbd9da505.bindTooltip(
+                `<div>
+                     
+    <b>South America</b><br>
+    Confirmed: 3,780,484<br>
+    Deaths: 135,506<br>
+    Recovered: 2,714,173
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_7e5f41040007ca24638c88c0df3e24fa.addTo(map_a4914948a6619079bf4079313720a98c);
+        
+    
+            var feature_group_41a0db7202132cec9eae3bc60f85fe81 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_a50e0d80ef131fcbfb49281bb1d06676 = L.circle(
+                [1.6508, 10.2679],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
+            ).addTo(feature_group_41a0db7202132cec9eae3bc60f85fe81);
+        
+    
+        var popup_f34f6c72e27cf298fcdac3030d59c49b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_47d02742e5ce2c846a2772693acf2294 = $(`<div id="html_47d02742e5ce2c846a2772693acf2294" style="width: 100.0%; height: 100.0%;">     <b>Africa</b><br>     Confirmed: 832,828<br>     Deaths: 17,817<br>     Recovered: 489,331     </div>`)[0];
+                popup_f34f6c72e27cf298fcdac3030d59c49b.setContent(html_47d02742e5ce2c846a2772693acf2294);
+            
+        
+
+        circle_a50e0d80ef131fcbfb49281bb1d06676.bindPopup(popup_f34f6c72e27cf298fcdac3030d59c49b)
+        ;
+
+        
+    
+    
+            circle_a50e0d80ef131fcbfb49281bb1d06676.bindTooltip(
+                `<div>
+                     
+    <b>Africa</b><br>
+    Confirmed: 832,828<br>
+    Deaths: 17,817<br>
+    Recovered: 489,331
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_606b7d48fdba92608e1499ba7d80c80d = L.circle(
+                [34.0479, 100.6197],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 27313.2, "stroke": true, "weight": 3}
+            ).addTo(feature_group_41a0db7202132cec9eae3bc60f85fe81);
+        
+    
+        var popup_847d78e3bdbd5de2d8c0da676c698b75 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a9066c7a71e453cdc6424c0a8e169d30 = $(`<div id="html_a9066c7a71e453cdc6424c0a8e169d30" style="width: 100.0%; height: 100.0%;">     <b>Asia</b><br>     Confirmed: 3,960,158<br>     Deaths: 91,044<br>     Recovered: 2,866,775     </div>`)[0];
+                popup_847d78e3bdbd5de2d8c0da676c698b75.setContent(html_a9066c7a71e453cdc6424c0a8e169d30);
+            
+        
+
+        circle_606b7d48fdba92608e1499ba7d80c80d.bindPopup(popup_847d78e3bdbd5de2d8c0da676c698b75)
+        ;
+
+        
+    
+    
+            circle_606b7d48fdba92608e1499ba7d80c80d.bindTooltip(
+                `<div>
+                     
+    <b>Asia</b><br>
+    Confirmed: 3,960,158<br>
+    Deaths: 91,044<br>
+    Recovered: 2,866,775
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_73abd19675dfc409e09ebf806b42973a = L.circle(
+                [54.526, 15.2551],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 60485.7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_41a0db7202132cec9eae3bc60f85fe81);
+        
+    
+        var popup_7197e3a05dfb3a3c639bdd3de48a26a5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_61580c77becded4534783a09349ef948 = $(`<div id="html_61580c77becded4534783a09349ef948" style="width: 100.0%; height: 100.0%;">     <b>Europe</b><br>     Confirmed: 2,784,659<br>     Deaths: 201,619<br>     Recovered: 1,607,077     </div>`)[0];
+                popup_7197e3a05dfb3a3c639bdd3de48a26a5.setContent(html_61580c77becded4534783a09349ef948);
+            
+        
+
+        circle_73abd19675dfc409e09ebf806b42973a.bindPopup(popup_7197e3a05dfb3a3c639bdd3de48a26a5)
+        ;
+
+        
+    
+    
+            circle_73abd19675dfc409e09ebf806b42973a.bindTooltip(
+                `<div>
+                     
+    <b>Europe</b><br>
+    Confirmed: 2,784,659<br>
+    Deaths: 201,619<br>
+    Recovered: 1,607,077
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_2dec292fe11750cf1163526c458d4d8b = L.circle(
+                [54.526, -105.2551],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
+            ).addTo(feature_group_41a0db7202132cec9eae3bc60f85fe81);
+        
+    
+        var popup_36566774b4e05e066c583e59bfe30044 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_26b091dff36637dca0d28c7beb489c21 = $(`<div id="html_26b091dff36637dca0d28c7beb489c21" style="width: 100.0%; height: 100.0%;">     <b>North America</b><br>     Confirmed: 768,557<br>     Deaths: 59,215<br>     Recovered: 428,652     </div>`)[0];
+                popup_36566774b4e05e066c583e59bfe30044.setContent(html_26b091dff36637dca0d28c7beb489c21);
+            
+        
+
+        circle_2dec292fe11750cf1163526c458d4d8b.bindPopup(popup_36566774b4e05e066c583e59bfe30044)
+        ;
+
+        
+    
+    
+            circle_2dec292fe11750cf1163526c458d4d8b.bindTooltip(
+                `<div>
+                     
+    <b>North America</b><br>
+    Confirmed: 768,557<br>
+    Deaths: 59,215<br>
+    Recovered: 428,652
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_05f79fba7f590cd2faf4216d8ff06415 = L.circle(
+                [-22.7359, 140.0188],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
+            ).addTo(feature_group_41a0db7202132cec9eae3bc60f85fe81);
+        
+    
+        var popup_fa49127c9ee14f45adb05f91b6c77545 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0f88eac6bf89768314d59bfbce400a75 = $(`<div id="html_0f88eac6bf89768314d59bfbce400a75" style="width: 100.0%; height: 100.0%;">     <b>Oceania</b><br>     Confirmed: 16,949<br>     Deaths: 189<br>     Recovered: 10,854     </div>`)[0];
+                popup_fa49127c9ee14f45adb05f91b6c77545.setContent(html_0f88eac6bf89768314d59bfbce400a75);
+            
+        
+
+        circle_05f79fba7f590cd2faf4216d8ff06415.bindPopup(popup_fa49127c9ee14f45adb05f91b6c77545)
+        ;
+
+        
+    
+    
+            circle_05f79fba7f590cd2faf4216d8ff06415.bindTooltip(
+                `<div>
+                     
+    <b>Oceania</b><br>
+    Confirmed: 16,949<br>
+    Deaths: 189<br>
+    Recovered: 10,854
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_012e3c3b6f398ff035f22831fb506833 = L.circle(
+                [0.0, 0.0],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 44593.799999999996, "stroke": true, "weight": 3}
+            ).addTo(feature_group_41a0db7202132cec9eae3bc60f85fe81);
+        
+    
+        var popup_3a4c6f4dcfae94fd968a7b300e25f423 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_88322244068c590d8ccf88a25822102c = $(`<div id="html_88322244068c590d8ccf88a25822102c" style="width: 100.0%; height: 100.0%;">     <b>Other</b><br>     Confirmed: 4,336,850<br>     Deaths: 148,646<br>     Recovered: 1,351,225     </div>`)[0];
+                popup_3a4c6f4dcfae94fd968a7b300e25f423.setContent(html_88322244068c590d8ccf88a25822102c);
+            
+        
+
+        circle_012e3c3b6f398ff035f22831fb506833.bindPopup(popup_3a4c6f4dcfae94fd968a7b300e25f423)
+        ;
+
+        
+    
+    
+            circle_012e3c3b6f398ff035f22831fb506833.bindTooltip(
+                `<div>
+                     
+    <b>Other</b><br>
+    Confirmed: 4,336,850<br>
+    Deaths: 148,646<br>
+    Recovered: 1,351,225
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_7fa9ef9761e861e8fcaf41dda82d6f94 = L.circle(
+                [-8.7832, -55.4915],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 40651.799999999996, "stroke": true, "weight": 3}
+            ).addTo(feature_group_41a0db7202132cec9eae3bc60f85fe81);
+        
+    
+        var popup_b621d76416124774723854e0b41c314a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_eb0845449d695c9993574f745fce056f = $(`<div id="html_eb0845449d695c9993574f745fce056f" style="width: 100.0%; height: 100.0%;">     <b>South America</b><br>     Confirmed: 3,780,484<br>     Deaths: 135,506<br>     Recovered: 2,714,173     </div>`)[0];
+                popup_b621d76416124774723854e0b41c314a.setContent(html_eb0845449d695c9993574f745fce056f);
+            
+        
+
+        circle_7fa9ef9761e861e8fcaf41dda82d6f94.bindPopup(popup_b621d76416124774723854e0b41c314a)
+        ;
+
+        
+    
+    
+            circle_7fa9ef9761e861e8fcaf41dda82d6f94.bindTooltip(
+                `<div>
+                     
+    <b>South America</b><br>
+    Confirmed: 3,780,484<br>
+    Deaths: 135,506<br>
+    Recovered: 2,714,173
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_41a0db7202132cec9eae3bc60f85fe81.addTo(map_a4914948a6619079bf4079313720a98c);
+        
+    
+            var feature_group_9b3699501b7a11da8790d678d019986f = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_4b514eadc9d8d33c9d9c15044f9af554 = L.circle(
+                [1.6508, 10.2679],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 146799.3, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9b3699501b7a11da8790d678d019986f);
+        
+    
+        var popup_b7a0bc3ba371c46af8a94b5ad74ec05b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f5187559206e8e2e366db0504ef22b05 = $(`<div id="html_f5187559206e8e2e366db0504ef22b05" style="width: 100.0%; height: 100.0%;">     <b>Africa</b><br>     Confirmed: 832,828<br>     Deaths: 17,817<br>     Recovered: 489,331     </div>`)[0];
+                popup_b7a0bc3ba371c46af8a94b5ad74ec05b.setContent(html_f5187559206e8e2e366db0504ef22b05);
+            
+        
+
+        circle_4b514eadc9d8d33c9d9c15044f9af554.bindPopup(popup_b7a0bc3ba371c46af8a94b5ad74ec05b)
+        ;
+
+        
+    
+    
+            circle_4b514eadc9d8d33c9d9c15044f9af554.bindTooltip(
+                `<div>
+                     
+    <b>Africa</b><br>
+    Confirmed: 832,828<br>
+    Deaths: 17,817<br>
+    Recovered: 489,331
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_a1ce46441d025177ea069406d78c2577 = L.circle(
+                [34.0479, 100.6197],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 860032.5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9b3699501b7a11da8790d678d019986f);
+        
+    
+        var popup_fd75435e4fd9e2cf586f14828af04a84 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b089aa70f5d1dde1131cd1409049d67f = $(`<div id="html_b089aa70f5d1dde1131cd1409049d67f" style="width: 100.0%; height: 100.0%;">     <b>Asia</b><br>     Confirmed: 3,960,158<br>     Deaths: 91,044<br>     Recovered: 2,866,775     </div>`)[0];
+                popup_fd75435e4fd9e2cf586f14828af04a84.setContent(html_b089aa70f5d1dde1131cd1409049d67f);
+            
+        
+
+        circle_a1ce46441d025177ea069406d78c2577.bindPopup(popup_fd75435e4fd9e2cf586f14828af04a84)
+        ;
+
+        
+    
+    
+            circle_a1ce46441d025177ea069406d78c2577.bindTooltip(
+                `<div>
+                     
+    <b>Asia</b><br>
+    Confirmed: 3,960,158<br>
+    Deaths: 91,044<br>
+    Recovered: 2,866,775
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_7dfc2cf9f1052a42f172b8eb54e4faa6 = L.circle(
+                [54.526, 15.2551],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 482123.1, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9b3699501b7a11da8790d678d019986f);
+        
+    
+        var popup_f2f20d831c4d6c3653099cd6e046f9d6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_db0930170ad5537a94dcffc0ed069a9f = $(`<div id="html_db0930170ad5537a94dcffc0ed069a9f" style="width: 100.0%; height: 100.0%;">     <b>Europe</b><br>     Confirmed: 2,784,659<br>     Deaths: 201,619<br>     Recovered: 1,607,077     </div>`)[0];
+                popup_f2f20d831c4d6c3653099cd6e046f9d6.setContent(html_db0930170ad5537a94dcffc0ed069a9f);
+            
+        
+
+        circle_7dfc2cf9f1052a42f172b8eb54e4faa6.bindPopup(popup_f2f20d831c4d6c3653099cd6e046f9d6)
+        ;
+
+        
+    
+    
+            circle_7dfc2cf9f1052a42f172b8eb54e4faa6.bindTooltip(
+                `<div>
+                     
+    <b>Europe</b><br>
+    Confirmed: 2,784,659<br>
+    Deaths: 201,619<br>
+    Recovered: 1,607,077
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_3f8b253d6dab1ade23d42a658e30ff49 = L.circle(
+                [54.526, -105.2551],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 128595.59999999999, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9b3699501b7a11da8790d678d019986f);
+        
+    
+        var popup_4b4482e86b256f3781eea7653b19d7b1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a77bee3358c026f67eb6d586c29f7000 = $(`<div id="html_a77bee3358c026f67eb6d586c29f7000" style="width: 100.0%; height: 100.0%;">     <b>North America</b><br>     Confirmed: 768,557<br>     Deaths: 59,215<br>     Recovered: 428,652     </div>`)[0];
+                popup_4b4482e86b256f3781eea7653b19d7b1.setContent(html_a77bee3358c026f67eb6d586c29f7000);
+            
+        
+
+        circle_3f8b253d6dab1ade23d42a658e30ff49.bindPopup(popup_4b4482e86b256f3781eea7653b19d7b1)
+        ;
+
+        
+    
+    
+            circle_3f8b253d6dab1ade23d42a658e30ff49.bindTooltip(
+                `<div>
+                     
+    <b>North America</b><br>
+    Confirmed: 768,557<br>
+    Deaths: 59,215<br>
+    Recovered: 428,652
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_f2bd5902631dc1eb45600e025ff1163b = L.circle(
+                [-22.7359, 140.0188],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9b3699501b7a11da8790d678d019986f);
+        
+    
+        var popup_a7fc9673098572a05553c40222028a92 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b9b0715254620a710fbb246fbc69ae3b = $(`<div id="html_b9b0715254620a710fbb246fbc69ae3b" style="width: 100.0%; height: 100.0%;">     <b>Oceania</b><br>     Confirmed: 16,949<br>     Deaths: 189<br>     Recovered: 10,854     </div>`)[0];
+                popup_a7fc9673098572a05553c40222028a92.setContent(html_b9b0715254620a710fbb246fbc69ae3b);
+            
+        
+
+        circle_f2bd5902631dc1eb45600e025ff1163b.bindPopup(popup_a7fc9673098572a05553c40222028a92)
+        ;
+
+        
+    
+    
+            circle_f2bd5902631dc1eb45600e025ff1163b.bindTooltip(
+                `<div>
+                     
+    <b>Oceania</b><br>
+    Confirmed: 16,949<br>
+    Deaths: 189<br>
+    Recovered: 10,854
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_f2acd69b18a82c9205e1546e1e957d87 = L.circle(
+                [0.0, 0.0],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 405367.5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9b3699501b7a11da8790d678d019986f);
+        
+    
+        var popup_4f1aa5ce1558ff1a23328307b92abc46 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_02340ffa64e0cba87425882ebd2dea3f = $(`<div id="html_02340ffa64e0cba87425882ebd2dea3f" style="width: 100.0%; height: 100.0%;">     <b>Other</b><br>     Confirmed: 4,336,850<br>     Deaths: 148,646<br>     Recovered: 1,351,225     </div>`)[0];
+                popup_4f1aa5ce1558ff1a23328307b92abc46.setContent(html_02340ffa64e0cba87425882ebd2dea3f);
+            
+        
+
+        circle_f2acd69b18a82c9205e1546e1e957d87.bindPopup(popup_4f1aa5ce1558ff1a23328307b92abc46)
+        ;
+
+        
+    
+    
+            circle_f2acd69b18a82c9205e1546e1e957d87.bindTooltip(
+                `<div>
+                     
+    <b>Other</b><br>
+    Confirmed: 4,336,850<br>
+    Deaths: 148,646<br>
+    Recovered: 1,351,225
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_60096217ac5c97dfa8ac180ded0aa0aa = L.circle(
+                [-8.7832, -55.4915],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 814251.9, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9b3699501b7a11da8790d678d019986f);
+        
+    
+        var popup_b8e200695473ddcecc7cfef7dec35d76 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_449529c15b1619b013ae2d3cff6cf4c4 = $(`<div id="html_449529c15b1619b013ae2d3cff6cf4c4" style="width: 100.0%; height: 100.0%;">     <b>South America</b><br>     Confirmed: 3,780,484<br>     Deaths: 135,506<br>     Recovered: 2,714,173     </div>`)[0];
+                popup_b8e200695473ddcecc7cfef7dec35d76.setContent(html_449529c15b1619b013ae2d3cff6cf4c4);
+            
+        
+
+        circle_60096217ac5c97dfa8ac180ded0aa0aa.bindPopup(popup_b8e200695473ddcecc7cfef7dec35d76)
+        ;
+
+        
+    
+    
+            circle_60096217ac5c97dfa8ac180ded0aa0aa.bindTooltip(
+                `<div>
+                     
+    <b>South America</b><br>
+    Confirmed: 3,780,484<br>
+    Deaths: 135,506<br>
+    Recovered: 2,714,173
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_9b3699501b7a11da8790d678d019986f.addTo(map_a4914948a6619079bf4079313720a98c);
+        
+    
+            var layer_control_14cc2d98f062ea0e8d8e1e431b866ce0_layers = {
+                base_layers : {
+                    "cartodbdarkmatter" : tile_layer_6bb520075ff23e419c1550295293160e,
+                },
+                overlays :  {
+                    "Confirmed Cases" : feature_group_7e5f41040007ca24638c88c0df3e24fa,
+                    "Deaths" : feature_group_41a0db7202132cec9eae3bc60f85fe81,
+                    "Recovered" : feature_group_9b3699501b7a11da8790d678d019986f,
+                },
+            };
+            let layer_control_14cc2d98f062ea0e8d8e1e431b866ce0 = L.control.layers(
+                layer_control_14cc2d98f062ea0e8d8e1e431b866ce0_layers.base_layers,
+                layer_control_14cc2d98f062ea0e8d8e1e431b866ce0_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_a4914948a6619079bf4079313720a98c);
+
+        
+</script>
+</html>
